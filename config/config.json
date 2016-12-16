@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "SA",
+    "password": "M0is3s2203",
+    "database": "webpage_development",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  },
+  "test": {
+    "username": "SA",
+    "password": "M0is3s2203",
+    "database": "webpage_test",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  },
+  "production": {
+    "username": "SA",
+    "password": "M0is3s2203",
+    "database": "webpage_production",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  }
+}
