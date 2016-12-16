@@ -1,20 +1,21 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('Menu', {
+  return sequelize.define('BotoneraMenu', {
     Id: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      primaryKey: true
     },
     ObjType: {
       type: DataTypes.STRING,
       allowNull: true,
-      defaultValue: "1"
+      defaultValue: "4"
     },
     IdMenu: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      primaryKey: true
+      defaultValue: "1"
     },
     OpMenu: {
       type: DataTypes.STRING,
@@ -41,6 +42,6 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     }
   }, {
-    tableName: 'Menu'
+    tableName: 'BotoneraMenu'
   });
 };

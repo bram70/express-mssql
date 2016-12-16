@@ -2,7 +2,7 @@
   "development": {
     "username": "SA",
     "password": "M0is3s2203",
-    "database": "webpage_development",
+    "database": "DW",
     "host": "127.0.0.1",
     "dialect": "mssql"
   },

@@ -1,46 +1,33 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('Menu', {
+  return sequelize.define('OUGR', {
     Id: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    ObjType: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      defaultValue: "1"
-    },
-    IdMenu: {
+    GroupId: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    OpMenu: {
+    GroupName: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    Pos: {
-      type: "NUMERIC",
-      allowNull: false
-    },
-    Imagen: {
+    GroupDec: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    Url: {
-      type: DataTypes.STRING,
+    TPLId: {
+      type: DataTypes.INTEGER,
       allowNull: true
-    },
-    Idioma: {
-      type: DataTypes.STRING,
-      allowNull: false
     },
     Activo: {
       type: "BIT",
       allowNull: true
     }
   }, {
-    tableName: 'Menu'
+    tableName: 'OUGR'
   });
 };
