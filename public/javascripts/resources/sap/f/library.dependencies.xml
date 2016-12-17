@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.f">
+  <module name="sap/f/DynamicPage.js" size="39448" compressedSize="17343">
+    <description>Provides control sap.f.DynamicPage.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/f/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ScrollBar.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/delegate/ScrollEnablement.js"/>
+      <module name="sap/ui/Device.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/DynamicPageHeader.js" size="7638" compressedSize="2703">
+    <description>Provides control sap.f.DynamicPageHeader.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/f/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/DynamicPageHeaderRenderer.js" size="1859" compressedSize="914">
+    <description>! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2016 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/DynamicPageRenderer.js" size="4057" compressedSize="2118">
+    <description>! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2016 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.</description>
+    <requires>
+      <module name="sap/ui/Device.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/DynamicPageTitle.js" size="8445" compressedSize="3134">
+    <description>Provides control sap.f.DynamicPageTitle.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/f/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/DynamicPageTitleRenderer.js" size="3482" compressedSize="1875">
+    <description>! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2016 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/FlexibleColumnLayout.js" size="20191" compressedSize="9389">
+    <description>Provides control sap.f.FlexibleColumnLayout.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/f/library.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/m/Button.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/FlexibleColumnLayoutRenderer.js" size="3190" compressedSize="2047">
+    <description>! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2016 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/library.js" size="1505" compressedSize="675">
+    <description>Initialization Code and shared classes of library sap.f.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/m/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/f/manifest.json" size="770">
+  </module>
+</library>

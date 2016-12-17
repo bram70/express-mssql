@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>StandardTreeItem</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The &lt;code&gt;sap.m.StandardTreeItem&lt;/code&gt; is a tree item providing a title, image, etc.</documentation>
+    <since>1.42.0</since>
+    <baseType>sap.m/TreeItemBase</baseType>
+    <properties>
+        <property group="Misc" defaultValue="" type="sap.ui.core/string" name="title">
+            <documentation>Defines the title of the item.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/URI" name="icon">
+            <documentation>Defines the tree item icon.</documentation>
+        </property>
+    </properties>
+</control>

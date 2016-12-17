@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>DynamicPageHeader</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>&lt;strong&gt;&lt;i&gt;Overview&lt;/i&gt;&lt;/strong&gt;
+&lt;br&gt;&lt;br&gt;
+The {@link sap.f.DynamicPageHeader DynamicPageHeader} control is part
+of the {@link sap.f.DynamicPage} family and is used to serve as header
+of the {@link sap.f.DynamicPage DynamicPage}.
+&lt;br&gt;&lt;br&gt;
+&lt;strong&gt;&lt;i&gt;Usage&lt;/i&gt;&lt;/strong&gt;
+&lt;br&gt;&lt;br&gt;
+The {@link sap.f.DynamicPageHeader DynamicPageHeader} can hold any
+layout control and has two states - expanded and collapsed (snapped).
+The switching between these states happens when:
+&lt;ul&gt;
+&lt;li&gt;the user scrolls below its bottom margin&lt;/li&gt;
+&lt;li&gt;the user clicks on the
+{@link sap.f.DynamicPageTitle DynamicPageTitle}&lt;/li&gt;
+&lt;li&gt;through the {@link sap.f.DynamicPage DynamicPage}
+property &lt;code&gt;headerExpanded&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;strong&gt;&lt;i&gt;Responsive Behavior&lt;/i&gt;&lt;/strong&gt;
+&lt;br&gt;&lt;br&gt;
+The responsive behavior of the
+{@link sap.f.DynamicPageHeader DynamicPageHeader} depends on the
+behavior of the content that is displayed.</documentation>
+    <since>1.42</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Appearance" defaultValue="true" type="sap.ui.core/boolean" name="pinnable">
+            <documentation>Determines whether the header is pinnable.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation cardinality="0..n" type="sap.ui.core/Control" name="content">
+            <documentation>The content of the header.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.m/Button" name="_pinButton">
+            <documentation>The pin/unpin button in the header.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

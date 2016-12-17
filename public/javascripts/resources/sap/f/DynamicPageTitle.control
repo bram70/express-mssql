@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>DynamicPageTitle</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>&lt;strong&gt;&lt;i&gt;Overview&lt;/i&gt;&lt;/strong&gt;
+&lt;br&gt;&lt;br&gt;
+The {@link sap.f.DynamicPageTitle DynamicPageTitle} control is part of
+the {@link sap.f.DynamicPage} family and is used to serve as title of
+the {@link sap.f.DynamicPage DynamicPage}.
+&lt;br&gt;&lt;br&gt;
+&lt;strong&gt;&lt;i&gt;Usage&lt;/i&gt;&lt;/strong&gt;
+&lt;br&gt;&lt;br&gt;
+The {@link sap.f.DynamicPageTitle DynamicPageTitle} can hold any
+control and displays the most important information regarding the
+object that will always remain visible while scrolling.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Note:&lt;/b&gt; The &lt;code&gt;actions&lt;/code&gt; aggregation accepts any UI5 control, but it`s recommended to use controls,
+suitable for {@link sap.m.Toolbar} and {@link sap.m.OverflowToolbar}.
+&lt;br&gt;&lt;br&gt;
+By clicking on the {@link sap.f.DynamicPageTitle DynamicPageTitle},
+the user can switch between the expanded/collapsed states of the
+{@link sap.f.DynamicPageHeader DynamicPageHeader}.
+&lt;br&gt;&lt;br&gt;
+&lt;strong&gt;&lt;i&gt;Responsive Behavior&lt;/i&gt;&lt;/strong&gt;
+&lt;br&gt;&lt;br&gt;
+The responsive behavior of the
+{@link sap.f.DynamicPageTitle DynamicPageTitle} depends on the
+behavior of the content that is displayed.</documentation>
+    <since>1.42</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <aggregations>
+        <aggregation cardinality="0..1" type="sap.ui.core/Control" name="heading">
+            <documentation>The title or any other UI5 control that serves as a heading for the object.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" type="sap.ui.core/Control" name="actions">
+            <documentation>The &lt;code&gt;DynamicPageTitle&lt;/code&gt; actions.
+&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; The &lt;code&gt;actions&lt;/code&gt; aggregation accepts any UI5 control, but it`s recommended to use controls,
+suitable for {@link sap.m.Toolbar} and {@link sap.m.OverflowToolbar}.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" type="sap.ui.core/Control" name="snappedContent">
+            <documentation>The content that is displayed in the &lt;code&gt;DynamicPageTitle&lt;/code&gt; in collapsed (snapped) state.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" type="sap.ui.core/Control" name="expandedContent">
+            <documentation>The content that is displayed in the &lt;code&gt;DynamicPageTitle&lt;/code&gt; in expanded state.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.ui.core/Control" name="_overflowToolbar">
+            <documentation>Internal &lt;code&gt;OverflowToolbar&lt;/code&gt; for the &lt;code&gt;DynamicPageTitle&lt;/code&gt; actions.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

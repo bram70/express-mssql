@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Slider</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>A control that shows an interval and a handle to select a single value on it.
+&lt;h3&gt;Overview&lt;/h3&gt;
+
+A {@link sap.m.Slider} control represents a numerical range and a handle.
+The purpose of the control is to enable visual selection of а value in a continuous numerical range by moving an adjustable handle.
+
+&lt;b&gt;Notes:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;Only horizontal sliders are possible. &lt;/li&gt;
+&lt;li&gt;The handle can be moved in steps of predefined size. This is done with the &lt;code&gt;step&lt;/code&gt; property. &lt;/li&gt;
+&lt;li&gt;Setting the property &lt;code&gt;showAdvancedTooltips&lt;/code&gt; shows an input field above the handle&lt;/li&gt;
+&lt;li&gt;Setting the property &lt;code&gt;inputsAsTooltips&lt;/code&gt; enables the user to enter a specific value in the handle's tooltip. &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;Structure&lt;/h3&gt;
+
+The most important properties of the Slider are:
+&lt;ul&gt;
+&lt;li&gt; min - The minimum value of the slider range &lt;/li&gt;
+&lt;li&gt; max - The maximum value of the slider range &lt;/li&gt;
+&lt;li&gt; value - The current value of the slider&lt;/li&gt;
+&lt;li&gt; progress - Determines if a progress bar will be shown on the slider range&lt;/li&gt;
+&lt;li&gt; step - Determines the increments in which the slider will move&lt;/li&gt;
+&lt;/ul&gt;
+These properties determine the visualization of the tooltips:
+&lt;ul&gt;
+&lt;li&gt; showAdvancedTooltips - Determines if a tooltip should be displayed above the handle&lt;/li&gt;
+&lt;li&gt; inputsAsTooltips - Determines if the tooltip displayed above the slider's handle should include an input field&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+
+The most common usecase is to select values on a continuous numerical scale (e.g. temperature, volume, etc. ).
+
+
+&lt;h3&gt;Responsive Behavior&lt;/h3&gt;
+
+The &lt;code&gt;sap.m.Slider&lt;/code&gt; control adjusts to the size of its parent container by recalculating and resizing the width of the control.
+You can move the slider handle in several different ways:
+&lt;ul&gt;
+&lt;li&gt; Drag and drop to the desired value&lt;/li&gt;
+&lt;li&gt; Click/tap on the range bar to move the handle to that location &lt;/li&gt;
+&lt;li&gt; Enter the desired value in the input field (if available) &lt;/li&gt;
+&lt;li&gt; Keyboard (Arrow keys, &quot;+&quot; and &quot;-&quot;) &lt;/li&gt;
+&lt;/ul&gt;</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Appearance" defaultValue="100%" type="sap.ui.core/CSSSize" name="width">
+            <documentation>Defines the width of the control.</documentation>
+        </property>
+        <property group="Behavior" defaultValue="true" type="sap.ui.core/boolean" name="enabled">
+            <documentation>Indicates whether the user can change the value.</documentation>
+        </property>
+        <property group="Misc" defaultValue="" type="sap.ui.core/string" name="name">
+            <documentation>The name property to be used in the HTML code for the slider (e.g. for HTML forms that send data to the server via submit).</documentation>
+        </property>
+        <property group="Data" defaultValue="0" type="sap.ui.core/float" name="min">
+            <documentation>The minimum value.</documentation>
+        </property>
+        <property group="Data" defaultValue="100" type="sap.ui.core/float" name="max">
+            <documentation>The maximum value.</documentation>
+        </property>
+        <property group="Data" defaultValue="1" type="sap.ui.core/float" name="step">
+            <documentation>Define the amount of units to change the slider when adjusting by drag and drop.
+
+Defines the size of the slider's selection intervals. (e.g. min = 0, max = 10, step = 5 would result in possible selection of the values 0, 5, 10).
+
+The step must be positive, if a negative number is provided, the default value will be used instead.
+If the width of the slider converted to pixels is less than the range (max – min), the value will be rounded to multiples of the step size.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="progress">
+            <documentation>Indicate whether a progress bar indicator is shown.</documentation>
+        </property>
+        <property group="Data" defaultValue="0" type="sap.ui.core/float" name="value">
+            <documentation>Define the value.
+
+If the value is lower/higher than the allowed minimum/maximum, the value of the properties &lt;code&gt;min&lt;code&gt;/&lt;code&gt;max&lt;/code&gt; are used instead.</documentation>
+        </property>
+        <property since="1.31" group="Appearance" defaultValue="true" type="sap.ui.core/boolean" name="showHandleTooltip">
+            <documentation>Indicate whether the handle tooltip is shown.</documentation>
+        </property>
+        <property since="1.42" group="Appearance" defaultValue="false" type="sap.ui.core/boolean" name="showAdvancedTooltip">
+            <documentation>Indicate whether the handle's advanced tooltip is shown. &lt;b&gt;Note:&lt;/b&gt; Setting this option to &lt;code&gt;true&lt;/code&gt;
+will ignore the value set in &lt;code&gt;showHandleTooltips&lt;/code&gt;. This will cause only the advanced tooltip to be shown.</documentation>
+        </property>
+        <property since="1.42" group="Appearance" defaultValue="false" type="sap.ui.core/boolean" name="inputsAsTooltips">
+            <documentation>Indicates whether input fields should be used as tooltips for the handles. &lt;b&gt;Note:&lt;/b&gt; Setting this option to &lt;code&gt;true&lt;/code&gt;
+will only work if &lt;code&gt;showAdvancedTooltips&lt;/code&gt; is set to &lt;code&gt;true&lt;/code&gt;.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="change">
+            <documentation>This event is triggered after the end user finishes interacting, if there is any change.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/float" name="value">
+                    <documentation>The current value of the slider after a change.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event allowPreventDefault="false" name="liveChange">
+            <documentation>This event is triggered during the dragging period, each time the slider value changes.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/float" name="value">
+                    <documentation>The current value of the slider after a live change.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <associations>
+        <association since="1.27.0" cardinality="0..n" type="sap.ui.core/Control" name="ariaLabelledBy">
+            <documentation>Association to controls / IDs which label this control (see WAI-ARIA attribute &lt;code&gt;aria-labelledby&lt;/code&gt;).</documentation>
+        </association>
+    </associations>
+</control>

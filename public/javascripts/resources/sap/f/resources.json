@@ -1,0 +1,328 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".library"
+    },
+    {
+      "name": ".theming"
+    },
+    {
+      "name": "DynamicPage-dbg.js",
+      "module": "sap/f/DynamicPage.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/f/library.js",
+        "sap/ui/core/Control.js",
+        "sap/ui/core/ScrollBar.js",
+        "sap/ui/core/ResizeHandler.js",
+        "sap/ui/core/delegate/ScrollEnablement.js",
+        "sap/ui/Device.js"
+      ]
+    },
+    {
+      "name": "DynamicPage.js",
+      "module": "sap/f/DynamicPage.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/f/library.js",
+        "sap/ui/core/Control.js",
+        "sap/ui/core/ScrollBar.js",
+        "sap/ui/core/ResizeHandler.js",
+        "sap/ui/core/delegate/ScrollEnablement.js",
+        "sap/ui/Device.js"
+      ]
+    },
+    {
+      "name": "DynamicPageHeader-dbg.js",
+      "module": "sap/f/DynamicPageHeader.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/f/library.js",
+        "sap/ui/core/Control.js",
+        "sap/ui/core/InvisibleText.js",
+        "sap/m/ButtonType.js",
+        "sap/m/ToggleButton.js"
+      ]
+    },
+    {
+      "name": "DynamicPageHeader.control",
+      "designtime": true
+    },
+    {
+      "name": "DynamicPageHeader.js",
+      "module": "sap/f/DynamicPageHeader.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/f/library.js",
+        "sap/ui/core/Control.js",
+        "sap/ui/core/InvisibleText.js",
+        "sap/m/ButtonType.js",
+        "sap/m/ToggleButton.js"
+      ]
+    },
+    {
+      "name": "DynamicPageHeaderRenderer-dbg.js",
+      "module": "sap/f/DynamicPageHeaderRenderer.js",
+      "isDebug": true
+    },
+    {
+      "name": "DynamicPageHeaderRenderer.js",
+      "module": "sap/f/DynamicPageHeaderRenderer.js"
+    },
+    {
+      "name": "DynamicPageRenderer-dbg.js",
+      "module": "sap/f/DynamicPageRenderer.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/Device.js"
+      ]
+    },
+    {
+      "name": "DynamicPageRenderer.js",
+      "module": "sap/f/DynamicPageRenderer.js",
+      "required": [
+        "sap/ui/Device.js"
+      ]
+    },
+    {
+      "name": "DynamicPageTitle-dbg.js",
+      "module": "sap/f/DynamicPageTitle.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/f/library.js",
+        "sap/ui/core/Control.js",
+        "sap/m/OverflowToolbar.js"
+      ]
+    },
+    {
+      "name": "DynamicPageTitle.control",
+      "designtime": true
+    },
+    {
+      "name": "DynamicPageTitle.js",
+      "module": "sap/f/DynamicPageTitle.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/f/library.js",
+        "sap/ui/core/Control.js",
+        "sap/m/OverflowToolbar.js"
+      ]
+    },
+    {
+      "name": "DynamicPageTitleRenderer-dbg.js",
+      "module": "sap/f/DynamicPageTitleRenderer.js",
+      "isDebug": true
+    },
+    {
+      "name": "DynamicPageTitleRenderer.js",
+      "module": "sap/f/DynamicPageTitleRenderer.js"
+    },
+    {
+      "name": "FlexibleColumnLayout-dbg.js",
+      "module": "sap/f/FlexibleColumnLayout.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/f/library.js",
+        "sap/ui/core/ResizeHandler.js",
+        "sap/ui/core/Control.js",
+        "sap/m/Button.js"
+      ]
+    },
+    {
+      "name": "FlexibleColumnLayout.js",
+      "module": "sap/f/FlexibleColumnLayout.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/f/library.js",
+        "sap/ui/core/ResizeHandler.js",
+        "sap/ui/core/Control.js",
+        "sap/m/Button.js"
+      ]
+    },
+    {
+      "name": "FlexibleColumnLayoutRenderer-dbg.js",
+      "module": "sap/f/FlexibleColumnLayoutRenderer.js",
+      "isDebug": true
+    },
+    {
+      "name": "FlexibleColumnLayoutRenderer.js",
+      "module": "sap/f/FlexibleColumnLayoutRenderer.js"
+    },
+    {
+      "name": "ThreeColumnLayoutType.type",
+      "designtime": true
+    },
+    {
+      "name": "library-all-dbg.js",
+      "isDebug": true,
+      "merged": true
+    },
+    {
+      "name": "library-all.js",
+      "merged": true
+    },
+    {
+      "name": "library-dbg.js",
+      "module": "sap/f/library.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/library.js",
+        "sap/m/library.js"
+      ]
+    },
+    {
+      "name": "library-preload.js",
+      "merged": true
+    },
+    {
+      "name": "library-preload.js.map"
+    },
+    {
+      "name": "library-preload.json",
+      "merged": true
+    },
+    {
+      "name": "library.dependencies.json"
+    },
+    {
+      "name": "library.dependencies.xml"
+    },
+    {
+      "name": "library.js",
+      "module": "sap/f/library.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/library.js",
+        "sap/m/library.js"
+      ]
+    },
+    {
+      "name": "library.templates.xml"
+    },
+    {
+      "name": "manifest.json",
+      "module": "sap/f/manifest.json"
+    },
+    {
+      "name": "resources.json"
+    },
+    {
+      "name": "themes/base/.theming",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/DynamicPage.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/DynamicPageHeader.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/DynamicPageTitle.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/FlexibleColumnLayout.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-RTL.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-parameters.json",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.source.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/sap_hcb/.theming",
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/DynamicPage.less",
+      "designtime": true,
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/DynamicPageHeader.less",
+      "designtime": true,
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/DynamicPageTitle.less",
+      "designtime": true,
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/FlexibleColumnLayout.less",
+      "designtime": true,
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/library-RTL.css",
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/library-dbg.css",
+      "isDebug": true,
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/library-parameters.json",
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/library.css",
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/library.less",
+      "designtime": true,
+      "theme": "sap_hcb"
+    },
+    {
+      "name": "themes/sap_hcb/library.source.less",
+      "designtime": true,
+      "theme": "sap_hcb"
+    }
+  ]
+}

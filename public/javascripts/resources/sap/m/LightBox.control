@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>LightBox</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The control represents a popup containing an image and a footer. The footer consists of two description texts
+(title and subtitle) and a close button. The purpose of the control is to display an image in its original size
+as long as this is possible (e.g. if the screen is 1000px wide but the image is 2000px wide the image will
+not be displayed in its full size). The most common usecase is to click on an image thumbnail to view it in bigger size.
+When the image that should be displayed in the control cannot be loaded an error is displayed in the popup.
+&lt;br/&gt;&lt;b&gt;Note:&lt;/b&gt; If the image doesn't load in 10 seconds an error is displayed.
+&lt;br/&gt;&lt;b&gt;Note:&lt;/b&gt; Setting the imageContent aggregation of the control as well as the source of the image and
+the title of the image is mandatory. If the image source is not set the control will not open.</documentation>
+    <since>1.42</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <aggregations>
+        <aggregation bindable="bindable" cardinality="0..n" type="sap.m/LightBoxItem" name="imageContent">
+            <documentation>Aggregation which holds data about the image and its description. Although multiple LightBoxItems
+may be added to this aggregation only the first one in the list will be taken into account.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.m/Button" name="_closeButton">
+            <documentation>The close button aggregation inside the LightBox control. This button has to have text in it.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.ui.core/Icon" name="_errorIcon">
+            <documentation>The error icon displayed when the image could not be loaded in time.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.m/Text" name="_errorTitle">
+            <documentation>The main error message displayed when the image could not be loaded.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.m/Text" name="_errorSubtitle">
+            <documentation>The detailed error message displayed when the image could not be loaded.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.ui.layout/VerticalLayout" name="_verticalLayout">
+            <documentation>A layout control used to display the error texts when the image could not be loaded.</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method type="sap.m/LightBox" name="open">
+            <documentation>Opens the LightBox.</documentation>
+        </method>
+        <method type="sap.m/LightBox" name="close">
+            <documentation>Closes the LightBox.</documentation>
+        </method>
+    </methods>
+</control>

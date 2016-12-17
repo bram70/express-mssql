@@ -1,10 +1,13 @@
 {
-  "name": "express-example",
-  "version": "0.0.0",
+  "name": "openui5-app",
+  "version": "0.1.0",
+  "description": "Openui5 try",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+     "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Wander B",
   "dependencies": {
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
@@ -17,5 +20,15 @@
     "serve-favicon": "~2.3.0",
     "stylus": "0.54.5",
     "tedious": "^1.14.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-eslint": "2.1.0",
+    "grunt-open": "^0.2.3",
+    "grunt-openui5": "^0.5.0"
   }
 }

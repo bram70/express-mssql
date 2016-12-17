@@ -1,0 +1,89 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * UI development toolkit for HTML5 (OpenUI5)
+ * (c) Copyright 2009-2016 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+
+@import "../base/library.less";
+@import "../../../../sap/ui/core/themes/sap_hcb/global.less";
+
+/* START "DynamicPage.less" */
+.sapFDynamicPageContent {
+	background: @sapHCStandardBG;
+}
+
+.sapFDynamicPageFooter {
+	opacity: 1;
+}
+/* END "DynamicPage.less" */
+
+/* START "DynamicPageTitle.less" */
+.sapFDynamicPageTitle {
+	background: @sapHCStandardBG;
+	border-bottom:0.125rem solid @sapHCStandardBG;
+}
+
+.sapFDynamicPageTitleWrapper.sapFDynamicPageTitleSnapped > .sapFDynamicPageTitle {
+	border-bottom: 0.125rem solid @sapHCStandardFG;
+}
+
+.sapFDynamicPageTitle > .sapFDynamicPageTitleLeft {
+	.sapFDynamicPageTitleLeftInner {
+		.sapFDynamicPageTitleLeftSnappedExpandContent {
+			color: @sapHCReducedAltFG;
+		}
+	}
+}
+/* END "DynamicPageTitle.less" */
+
+/* START "DynamicPageHeader.less" */
+.sapFDynamicPageHeader {
+	background: @sapHCStandardBG;
+	border-bottom: 0.125rem solid @sapHCStandardFG;
+}
+/* END "DynamicPageHeader.less" */
+
+/* START "FlexibleColumnLayout.less" */
+// Cozy mode
+.sapFFCL > {
+	& > .sapFFCLColumnMid.sapFFCLColumnActive {
+		border-left: 1px solid @sapHCStandardFG;
+		border-right: 1px solid @sapHCStandardFG;
+	}
+
+	& > .sapFFCLColumnActive.sapFFCLColumnLastActive {
+		border-right: none;
+		border-left: 1px solid @sapHCStandardFG;
+	}
+
+	& > .sapFFCLColumnActive.sapFFCLColumnFirstActive {
+		border-right: 1px solid @sapHCStandardFG;
+		border-left: none;
+	}
+
+	& > .sapFFCLColumnActive.sapFFCLColumnOnlyActive {
+		border-right: none;
+		border-left: none;
+	}
+}
+
+.sapFFCL {
+	.sapFFCLNavigationButton {
+		&.sapFFCLNavigationButtonLeft {
+			.sapMBtnInner {
+				border: 1px solid @sapHCStandardFG;
+				border-radius: 0 0.375rem 0.375rem 0;
+			}
+		}
+
+		&.sapFFCLNavigationButtonRight {
+			.sapMBtnInner {
+				border: 1px solid @sapHCStandardFG;
+				border-radius: 0.375rem 0 0 0.375rem;
+			}
+		}
+	}
+}
+/* END "FlexibleColumnLayout.less" */

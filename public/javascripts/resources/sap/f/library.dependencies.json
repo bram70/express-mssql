@@ -1,0 +1,82 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/f/DynamicPage.js",
+      "description" : "Provides control sap.f.DynamicPage.",
+      "size" : 39448,
+      "compressedSize" : 17343,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/ui/core/Control.js", "sap/ui/core/ScrollBar.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/delegate/ScrollEnablement.js", "sap/ui/Device.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageHeader.js",
+      "description" : "Provides control sap.f.DynamicPageHeader.",
+      "size" : 7638,
+      "compressedSize" : 2703,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/ui/core/Control.js", "sap/ui/core/InvisibleText.js", "sap/m/ButtonType.js", "sap/m/ToggleButton.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageHeaderRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2016 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 1859,
+      "compressedSize" : 914,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2016 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 4057,
+      "compressedSize" : 2118,
+      "required" : ["sap/ui/Device.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageTitle.js",
+      "description" : "Provides control sap.f.DynamicPageTitle.",
+      "size" : 8445,
+      "compressedSize" : 3134,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/ui/core/Control.js", "sap/m/OverflowToolbar.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/DynamicPageTitleRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2016 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 3482,
+      "compressedSize" : 1875,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/FlexibleColumnLayout.js",
+      "description" : "Provides control sap.f.FlexibleColumnLayout.",
+      "size" : 20191,
+      "compressedSize" : 9389,
+      "required" : ["jquery.sap.global.js", "sap/f/library.js", "sap/ui/core/ResizeHandler.js", "sap/ui/core/Control.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/FlexibleColumnLayoutRenderer.js",
+      "description" : "! UI development toolkit for HTML5 (OpenUI5) (c) Copyright 2009-2016 SAP SE or an SAP affiliate company. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.",
+      "size" : 3190,
+      "compressedSize" : 2047,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/library.js",
+      "description" : "Initialization Code and shared classes of library sap.f.",
+      "size" : 1505,
+      "compressedSize" : 675,
+      "required" : ["jquery.sap.global.js", "sap/ui/core/library.js", "sap/m/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/f/manifest.json",
+      "size" : 770,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

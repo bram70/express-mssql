@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>LightBoxLoadingStates</name>
+    <derived/>
+    <documentation>Types of LightBox loading stages</documentation>
+    <since>1.40</since>
+    <enumeration>
+        <value value="LOADING" name="Loading">
+            <documentation>The LightBox image is still loading.</documentation>
+        </value>
+        <value value="LOADED" name="Loaded">
+            <documentation>The LightBox image has loaded.</documentation>
+        </value>
+        <value value="TIME_OUT_ERROR" name="TimeOutError">
+            <documentation>The LightBox image has timed out, could not load.</documentation>
+        </value>
+        <value value="ERROR" name="Error">
+            <documentation>The LightBox image could not load.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

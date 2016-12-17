@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Library name="sap.f" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
+<Template name="sap.f.DynamicPageHeader" alias="DynamicPageHeader,Header">
+	<jsTemplate><![CDATA[new sap.f.DynamicPageHeader({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	pinnable: true, // boolean
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	content: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<DynamicPageHeader xmlns="sap.f"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	pinnable="true"
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+		<content></content> <!-- sap.ui.core.Control -->
+</DynamicPageHeader>
+]]></xmlTemplate>
+</Template>
+<Template name="sap.f.DynamicPageTitle" alias="DynamicPageTitle,Title">
+	<jsTemplate><![CDATA[new sap.f.DynamicPageTitle({
+	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
+	fieldGroupIds: [], // string[], since 1.31
+	tooltip: undefined, // sap.ui.core.TooltipBase
+	customData: [], // sap.ui.core.CustomData
+	dependents: [], // sap.ui.core.Control, since 1.19
+	heading: undefined, // sap.ui.core.Control
+	actions: [], // sap.ui.core.Control
+	snappedContent: [], // sap.ui.core.Control
+	expandedContent: [], // sap.ui.core.Control
+	validateFieldGroup: [function (oEvent) {
+		var ${control} = oEvent.getSource();
+	}, this]
+})
+]]></jsTemplate>
+	<xmlTemplate><![CDATA[<DynamicPageTitle xmlns="sap.f"
+	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
+	fieldGroupIds=""
+	validateFieldGroup="">
+		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+		<heading></heading> <!-- sap.ui.core.Control -->
+		<actions></actions> <!-- sap.ui.core.Control -->
+		<snappedContent></snappedContent> <!-- sap.ui.core.Control -->
+		<expandedContent></expandedContent> <!-- sap.ui.core.Control -->
+</DynamicPageTitle>
+]]></xmlTemplate>
+</Template>
+</Library>
